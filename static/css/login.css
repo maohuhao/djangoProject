@@ -1,0 +1,61 @@
+
+body {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 100%;
+}
+.login-box {
+    display: table;
+    table-layout: fixed;
+    overflow: hidden;
+    max-width: 700px;
+}
+.login-left {
+    display: table-cell;
+    position: relative;
+    margin-bottom: 0;
+    border-width: 0;
+    padding: 45px;
+}
+.login-left .form-group:last-child {
+    margin-bottom: 0px;
+}
+.login-right {
+    display: table-cell;
+    position: relative;
+    margin-bottom: 0;
+    border-width: 0;
+    padding: 45px;
+    width: 50%;
+    max-width: 50%;
+    background: #67b26f!important;
+    background: -moz-linear-gradient(45deg,#67b26f 0,#4ca2cd 100%)!important;
+    background: -webkit-linear-gradient(45deg,#67b26f 0,#4ca2cd 100%)!important;
+    background: linear-gradient(45deg,#67b26f 0,#4ca2cd 100%)!important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#67b26f', endColorstr='#4ca2cd', GradientType=1 )!important;
+}
+.login-box .has-feedback.feedback-left .form-control {
+    padding-left: 38px;
+    padding-right: 12px;
+}
+.login-box .has-feedback.feedback-left .form-control-feedback {
+    left: 0;
+    right: auto;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    z-index: 4;
+    color: #dcdcdc;
+}
+.login-box .has-feedback.feedback-left.row .form-control-feedback {
+    left: 15px;
+}
+@media (max-width: 576px) {
+  .login-right {
+      display: none;
+  }
+}
